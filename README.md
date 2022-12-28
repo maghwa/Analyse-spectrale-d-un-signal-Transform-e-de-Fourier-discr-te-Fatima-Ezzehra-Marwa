@@ -1,8 +1,8 @@
-# Analyse-spectrale-d-un-signal-Transform-e-de-Fourier-discr-te-Fatima-Ezzehra-Marwa
+# Analyse-spectrale-d-un-signal-Transform-e-de-Fourier-discr-te-Fatima Ennasseri-Marwa Elkamil
 ## TP1- Analyse spectrale d’un signal /Transformée de Fourier discrète
 
 #### Réalisé par: 
-- Fatima Ezzehra Ennassiri (Filière: Cyber Security)
+- Fatima  Ennassiri (Filière: Cyber Security)
 - Marwa El Kamil(Filière: Artficial Intelligence)
 ### Encadré par:
 - Mr Alae Ammour
@@ -27,9 +27,102 @@ transformation la plus courante utilisée dans le domaine fréquentiel est la
 transformation de Fourier. La transformation de Fourier est utilisée pour convertir un signal de n'importe quelle forme en une somme d'un nombre infini d'ondes sinusoïdales. L'analyse des fonctions sinusoïdales étant plus facile que l'analyse des fonctions de forme générale, cette méthode est très utile et largement utilisée.
 Dans ce Tp nous allons exploite la transformée de Fourier discrète qui est un outil mathématique de traitement du signal numérique, qui est l'équivalent discret de la transformée de Fourier continue qui est utilisée pour le traitement du signal analogique.
            
-  ## Partie 1: Représentation temporelle et fréquentielle
+  ### Partie 1: Représentation temporelle et fréquentielle
+   - pour calculer  la transformé de fourier a temps discrète sur des signaux suivant le temps on va appliquer la transformée de fourier discrète 
+
+#### 1- Tracer le signal x(t). Fréquence d’échantillonnage : fe = 10000Hz,Nombre d’échantillons : N = 5000
+
+
+
+   - pour représenter des signaux num echantionnées dans le domaine fréquentiel de fraquence 10^4 donc on va prends un echantillon dans le signal toute les (1/10^4), et générer un nombre d'échantillon de 5000 échantillons .
+   -  d'abord on va confugirer l'axe de temps de t=(0:N-1)*(1/fe), après on génère le signal x. t est de taille 5000. => plot(x,t)
+   -  on observe que c'est signal periodique complexe et aussi on observe qu'il est continue et pour afficher le signal réel on va  utiliser des points "plot(x,t,'.')".
+
+
+  ![amy](https://user-images.githubusercontent.com/120643516/209863872-d2826eae-5b18-46d8-b374-e3644e70f34e.png) ![7](https://user-images.githubusercontent.com/120643516/209864043-78844ec0-8c3c-4f28-8bcd-4e4d8ff400f5.png)
   
- (fatii you can write your work here)
+  ### =>donc on trouve ici plusieurs points si on calcule on obtient 5000 échantillons.  
+  
+#### 2- Calculer la TFD du signal x(t) en utilisant la commande fft, puis tracer son spectre 
+en amplitude après avoir créé le vecteur f qui correspond à l'échantillonnage du signal 
+dans l'espace fréquentiel. Utiliser la commande abs pour afficher le spectre 
+d’amplitude.
+
+Pout faire la représentation frequentielle on applique transformé de fourier discrète on utilisant la commande fft(x)
+le pas de discritisation dans le domaine fréquentiel >> { fe/N }.
+
+
+![Q2_partie1](https://user-images.githubusercontent.com/120643516/209865806-490ab1bc-0a9b-415a-999f-4b87cab6f8af.png)
+
+  
+  
+  ![ploot(fft)](https://user-images.githubusercontent.com/120643516/209865827-92d4c58c-46b9-45f8-8bc1-7bb91d7add14.png)
+
+
+on va avoir 6 piques , car la transformée de fourier représente la symétrique conjugué c-a-d le spectre est toujours symétrique par rapport a la frequnace d'echantillonage  donc on change l'intervale  on " (N/2:N/2-1)* fe".
+
+ 
+ #### 3. Pour mieux visualiser le contenu fréquentiel du signal, utiliser la fonction fftshift, qui 
+effectue un décalage circulaire centré sur zéro du spectre en amplitude obtenu par la
+commande fft.
+
+
+la transformée de fourier discrète donne les amplitude non normalisé pour les normalisé par rapporrt au nombre d'échantillon donc on dévise les amplitudes sur N et on sait que cette représentation et complexe pour trouver l'amplitude réel on multiple par 2 Cn=An/2.
+
+
+
+
+
+
+![Q3_partie1](https://user-images.githubusercontent.com/120643516/209866873-4229c21c-d72f-4dda-a29a-1d29f0280b78.png)
+
+
+![plot(fftshift)p1 re](https://user-images.githubusercontent.com/120643516/209866884-ce04c7a3-0ed8-4c94-b220-6f865df795ff.png)
+
+
+#### Un bruit correspond à tout phénomène perturbateur gênant la transmission ou l'interprétation d'un signal. Dans les applications scientifiques, les signaux sont souvent corrompus par du bruit aléatoire, modifiant ainsi leurs composantes fréquentielles. La TFD peut traiter le bruit aléatoire et révéler les fréquences qui y correspond.
+
+#### 4- Créer un nouveau signal xnoise, en introduisant un bruit blanc gaussien dans le 
+signal d’origine x(t), puis visualisez-le. Utiliser la commande randn pour générer ce 
+bruit. Il est à noter qu’un bruit blanc est une réalisation d'un processus aléatoire dans 
+lequel la densité spectrale de puissance est la même pour toutes les fréquences de 
+la bande passante. Ce bruit suit une loi normale de moyenne 0 et d’écart type 1.
+
+
+
+![Q4_partie1](https://user-images.githubusercontent.com/120643516/209867294-e558e05b-346b-4763-abc4-d452e50fcc95.png)
+
+
+![plot(bruit)](https://user-images.githubusercontent.com/120643516/209867316-6fe71ff5-c507-46b7-81b0-c5ee07cef5ab.png)
+
+
+#### 5 – Utiliser la commande sound pour écouter le signal et puis le signal bruité.
+pour écouter le bruit on utilise : sound(xnoise), sound(x+xnoise).
+
+#### La puissance du signal en fonction de la fréquence (densité spectrale de puissance)est une métrique couramment utilisée en traitement du signal. Elle est définie comme étant le carré du module de la TFD, divisée par le nombre d'échantillons de fréquence. 
+
+
+#### 6- Calculez puis tracer le spectre de puissance du signal bruité centré à la fréquence 
+zéro. 
+
+![Q6_partie1](https://user-images.githubusercontent.com/120643516/209867794-28ca4071-de8c-4823-b99b-67fcf127231e.png)
+
+
+
+
+![plot(Q6)_partie1](https://user-images.githubusercontent.com/120643516/209867832-0b6ddfa5-1de3-478c-a77b-d9bd870ad524.png)
+
+
+
+
+#### Interprétation de résultat obtenu :
+
+![partie1](https://user-images.githubusercontent.com/120643516/209868536-64b5d92a-a870-4ccb-ab69-87f346e249af.png)
+
+
+
+  
+  
  ## Partie 2: Analyse fréquentielle du chant du rorqual bleu
  
  - Introduction :
