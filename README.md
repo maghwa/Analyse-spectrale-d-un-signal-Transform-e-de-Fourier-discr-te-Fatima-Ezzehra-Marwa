@@ -20,11 +20,7 @@ pas, bref tout commentaire pertinent sur le TP.
 
 ### Introduction:
 
-Le concept le plus important dans l'analyse du domaine fréquentiel est la 
-transformation. La transformation est utilisée pour convertir une fonction de 
-domaine temporel en une fonction de domaine fréquentiel et inversement. La 
-transformation la plus courante utilisée dans le domaine fréquentiel est la 
-transformation de Fourier. La transformation de Fourier est utilisée pour convertir un signal de n'importe quelle forme en une somme d'un nombre infini d'ondes sinusoïdales. L'analyse des fonctions sinusoïdales étant plus facile que l'analyse des fonctions de forme générale, cette méthode est très utile et largement utilisée.
+Le concept le plus important dans l'analyse du domaine fréquentiel est la transformation. La transformation est utilisée pour convertir une fonction de domaine temporel en une fonction de domaine fréquentiel et inversement. La transformation la plus courante utilisée dans le domaine fréquentiel est la transformation de Fourier. La transformation de Fourier est utilisée pour convertir un signal de n'importe quelle forme en une somme d'un nombre infini d'ondes sinusoïdales. L'analyse des fonctions sinusoïdales étant plus facile que l'analyse des fonctions de forme générale, cette méthode est très utile et largement utilisée.
 Dans ce Tp nous allons exploite la transformée de Fourier discrète qui est un outil mathématique de traitement du signal numérique, qui est l'équivalent discret de la transformée de Fourier continue qui est utilisée pour le traitement du signal analogique.
            
   ### Partie 1: Représentation temporelle et fréquentielle
