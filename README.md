@@ -159,7 +159,6 @@ Comme vous remarquer dans les lignes de code le signal subit une compression / 1
 ![image](https://user-images.githubusercontent.com/87017143/209854290-4c82b576-7106-4eb9-bed0-d445e10684de.png)
 
 #### 4- Déterminer à partir du tracé, la fréquence fondamentale du gémissement de rorqual bleu.
-![209854515-4767cc6d-ff59-4d8e-8d58-04646e82cd4d](https://user-images.githubusercontent.com/87017143/209854767-8b67ba21-a9f4-4bca-bb7f-774fadb9b69e.png)
 
 ![image](https://user-images.githubusercontent.com/87017143/209854805-2ed0faf5-1155-4656-b79c-722b42b396e1.png)
 
