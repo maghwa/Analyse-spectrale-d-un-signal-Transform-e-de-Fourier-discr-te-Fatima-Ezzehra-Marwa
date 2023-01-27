@@ -160,7 +160,8 @@ Comme vous remarquer dans les lignes de code le signal subit une compression / 1
 
 #### 4- Déterminer à partir du tracé, la fréquence fondamentale du gémissement de rorqual bleu.
 
-![image](https://user-images.githubusercontent.com/87017143/209854805-2ed0faf5-1155-4656-b79c-722b42b396e1.png)
+<img width="682" alt="209854805-2ed0faf5-1155-4656-b79c-722b42b396e1" src="https://user-images.githubusercontent.com/87017143/215060898-b167bad4-1f1d-4dfe-9d81-6a2a2d6d1539.png">
+
 
 On observe une fréquence fondamentale qui est conforme a celle des rorquals bleus qui accordent leurs vocalises de basse fréquence de manière extrêmement précise et uniforme, à une fréquence de 16 H
 
