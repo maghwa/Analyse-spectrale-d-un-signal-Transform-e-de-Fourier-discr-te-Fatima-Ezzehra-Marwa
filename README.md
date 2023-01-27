@@ -1,5 +1,5 @@
-# Analyse-spectrale-d-un-signal-Transform-e-de-Fourier-discr-te-Fatima Ennasseri-Marwa Elkamil
-## TP1- Analyse spectrale d’un signal /Transformée de Fourier discrète
+#  TP1- Analyse spectrale d’un signal /Transformée de Fourier discrète Fatima Ennasseri-Marwa Elkamil
+##
 
 #### Réalisé par: 
 - Fatima  Ennassiri (Filière: Cyber Security)
